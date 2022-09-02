@@ -10,10 +10,7 @@ export default function Document() {
           name="description"
           content="At PlantSTEM we want to bring out the brightest in our students. We strive to teach them the concepts that they are going to use in their journey to reach the skies. We plant curiosity and provide water to quench the student’s thirst for knowledge. At PlantSTEM we are committed to teach anyone, regardless of their backgrounds."
         />
-        <link
-          rel="apple-touch-icon"
-          href="http://75.4.54.143/assets/img/logo.svg"
-        />
+        <link rel="apple-touch-icon" href="../assets/logo.svg" />
         {/*
                     manifest.json provides metadata used when your web app is installed on a
                     user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -33,7 +30,7 @@ export default function Document() {
           integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB"
           crossOrigin="anonymous"
         />
-        <link rel="icon" href="http://75.4.54.143/assets/img/logo.svg" />
+        <link rel="icon" href="../assets/logo.svg" />
       </Head>
       <body>
         <Main />
