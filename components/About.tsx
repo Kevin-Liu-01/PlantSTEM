@@ -16,12 +16,12 @@ function About() {
 
       <div className="bg-gradient-to-b  from-white to-gray-200  pb-12 ">
         <div className="px-4 sm:px-6 lg:px-0">
-          <div className="mx-auto max-w-7xl lg:text-center">
+          <div className="mx-auto max-w-7xl">
             <h2 className="text-lg font-semibold text-plantGreen">About Us</h2>
             <p className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
               Our Mission
             </p>
-            <p className="mt-4 max-w-5xl text-xl text-gray-500 lg:mx-auto">
+            <p className="mt-4 max-w-5xl text-xl text-gray-500 ">
               At PlantSTEM we want to bring out the brightest in our students.
               We strive to teach them the concepts that they are going to use in
               their journey to reach the skies. We plant curiosity and provide
