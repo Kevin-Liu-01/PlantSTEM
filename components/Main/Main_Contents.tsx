@@ -7,17 +7,17 @@ function HeaderContents() {
   const [effect, setEffect] = useState(true);
 
   return (
-    <div className="bg-gradient-to-b  from-white to-gray-200 ">
-      <div className="relative flex h-[600px] bg-gradient-to-b to-plantGreenDark from-plantGreen max-w-7xl rounded-2xl mx-10 md:mx-auto overflow-hidden">
+    <div className="bg-gradient-to-b from-white to-gray-200 ">
+      <div className="relative md:mx-auto mx-10 flex flex-col justify-center h-[600px] bg-gradient-to-b to-plantGreenDark from-plantGreen max-w-7xl rounded-2xl   overflow-hidden">
         <div className=" bg-[url('../assets/leaves.jpg')] opacity-20 h-full w-full absolute "></div>
 
-        <div className="justify-center mx-auto z-10">
-          <div className="md:mx-0 mx-10 text-4xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-5xl text-center mt-16 ">
+        <div className="flex flex-col justify-center z-10">
+          <div className="text-4xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-5xl text-center mt-8 md:mt-16 select-none  ">
             Welcome!
           </div>
           <div
             onClick={() => setCount(count + 1)}
-            className="my-8 lg:block justify-center        "
+            className="flex flex-col  items-center	 my-8 "
           >
             <svg
               width="536"
@@ -27,7 +27,7 @@ function HeaderContents() {
               xmlns="http://www.w3.org/2000/svg"
               className={`${
                 effect && "animate-wiggle"
-              }  h-48 hover:scale-105 transition duration-200 ease-in-out drop-shadow-lg`}
+              }  h-48  hover:scale-105 transition duration-200 ease-in-out drop-shadow-lg`}
               onClick={() => {
                 setEffect(true);
               }}
@@ -105,18 +105,24 @@ function HeaderContents() {
                 stroke-Linejoin="round"
               />
             </svg>
-            <div className="md:mx-0 mx-10 leading-8 font-bold tracking-tight text-plantGreenLight sm:text-2xl text-center mt-7 select-none ">
-              {count == 0 ? "" : count + " Clicks"}
+            <div
+              className={
+                count == 0
+                  ? " leading-8 font-bold tracking-tight text-transparent sm:text-2xl text-center mt-5 select-none "
+                  : "leading-8 font-bold tracking-tight text-plantGreenLight sm:text-2xl text-center mt-5 select-none "
+              }
+            >
+              {count + " Clicks"}
             </div>
           </div>
 
-          <div className="grid grid-rows-2 md:grid-cols-2 gap-8 pt-8">
-            <button className="flex rounded-lg md:mx-0 mx-20 drop-shadow-lg transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-plantGreenLight duration-200 ">
+          <div className="grid grid-rows-2 md:grid-cols-2 gap-x-8 gap-y-4 ">
+            <button className="flex hover:text-red-300 rounded-lg md:mx-0 mx-4 md:ml-96 drop-shadow-lg transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-red-700 duration-200 ">
               <div className="m-4 mx-auto text-2xl leading-8 font-bold tracking-tight select-none ">
                 Get Started
               </div>
             </button>
-            <button className="flex rounded-lg md:mx-0 mx-20  drop-shadow-lg transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-plantGreenLight duration-200 ">
+            <button className="flex hover:text-plantGreen rounded-lg md:mx-0 mx-4 md:mr-96 drop-shadow-lg transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-plantGreenLight duration-200 ">
               <Link passHref={true} href="/about">
                 <div className="m-4 mx-auto text-2xl leading-8 font-bold tracking-tight select-none ">
                   {" "}

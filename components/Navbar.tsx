@@ -36,7 +36,7 @@ function Navbar(props) {
                   </Disclosure.Button>
                 </div>{" "}
                 <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                  <a className="flex-shrink-0 flex ml-[-3rem] md:ml-0">
+                  <a className="flex-shrink-0 flex">
                     {/*browser logo begin*/}
                     <svg
                       width="536"
@@ -133,7 +133,7 @@ function Navbar(props) {
                       viewBox="0 0 536 521"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="block lg:hidden h-10 w-auto "
+                      className="block lg:hidden h-12 w-auto "
                     >
                       <ellipse
                         cx="277"
@@ -267,15 +267,15 @@ function Navbar(props) {
                             {Dropdown ? (
                               <div
                                 id="dropdown"
-                                className="absolute z-10 w-44 bg-white rounded-tr-lg rounded-bl-lg rounded-br-lg divide-y divide-gray-100 shadow dark:bg-gray-700 "
+                                className="absolute z-20 w-22 bg-white rounded-tr-lg rounded-bl-lg rounded-br-lg divide-y divide-gray-100 shadow dark:bg-gray-700 "
                               >
                                 <ul
-                                  className="py-1 text-sm text-gray-700 dark:text-gray-200"
+                                  className="py-1  text-gray-700 dark:text-gray-200"
                                   aria-labelledby="dropdownDefault"
                                 >
                                   <li>
                                     <Link passHref={true} href="/math">
-                                      <div className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white select-none ">
+                                      <div className="block py-2 px-4  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white select-none ">
                                         Math
                                       </div>
                                     </Link>
@@ -307,23 +307,94 @@ function Navbar(props) {
                 </div>
               </div>
             </div>
-            <Disclosure.Panel className="sm:hidden">
-              <div className="px-2 pt-2 pb-3 space-y-1">
-                {navigation.map((item) => (
-                  <Disclosure.Button
-                    key={item.name}
-                    as="a"
-                    href={item.href}
-                    className={classNames(
-                      item.name === props.page
-                        ? "hover:bg-gray-300 text-gray-700 w-[30%] border border-t-0 border-l-0 border-r-0 border-b-4 border-plantGreen"
-                        : "text-gray-400 hover:bg-gray-300 hover:text-gray-700",
-                      "block px-3 py-2 text-base font-medium hover:scale-105 transition duration-200 ease-in-out"
-                    )}
-                  >
-                    {item.name}
-                  </Disclosure.Button>
-                ))}
+            <Disclosure.Panel className="sm:hidden ">
+              <div className="px-2 pt-2 pb-3 space-y-1 ">
+                {navigation.map((item) =>
+                  item.name != "Classes" ? (
+                    <Disclosure.Button
+                      key={item.name}
+                      as="a"
+                      href={item.href}
+                      className={classNames(
+                        item.name === props.page
+                          ? "hover:bg-gray-300 text-gray-700 w-[30%] border border-t-0 border-l-0 border-r-0 border-b-4 border-plantGreen"
+                          : "text-gray-400 hover:bg-gray-300 hover:text-gray-700",
+                        "block px-3 py-2 text-base font-medium hover:scale-105 transition duration-200 ease-in-out"
+                      )}
+                    >
+                      {item.name}
+                    </Disclosure.Button>
+                  ) : (
+                    <div className="relative">
+                      <button
+                        id="dropdownDefault"
+                        data-dropdown-toggle="dropdown"
+                        className={classNames(
+                          item.name === props.page
+                            ? "text-gray-900 border border-t-0 border-l-0 border-r-0 border-b-4 border-plantGreen hover:border-plantGreenDark "
+                            : "text-gray-400 rounded-lg ",
+                          "pl-3 pr-3 pb-2.5 text-base font-medium hover:rounded-tl-lg hover:rounded-tr-lg hover:bg-plantGreen  hover:text-white hover:focus:ring-4 focus:outline-none  text-center inline-flex items-center transition duration-200 ease-in-out"
+                        )}
+                        type="button"
+                        onClick={() => setDropdown(!Dropdown)}
+                      >
+                        <div className="font-medium inline-flex text-base  pt-[0.45rem] ">
+                          {item.name}
+                          <svg
+                            className="ml-2 mt-1.5 w-4 h-4"
+                            aria-hidden="true"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M19 9l-7 7-7-7"
+                            ></path>
+                          </svg>
+                        </div>
+                      </button>
+                      {Dropdown ? (
+                        <div
+                          id="dropdown"
+                          className="absolute z-10 w-22 bg-white rounded-tr-lg rounded-bl-lg rounded-br-lg divide-y divide-gray-100 shadow dark:bg-gray-700 "
+                        >
+                          <ul
+                            className="py-1 text-sm text-gray-700 dark:text-gray-200"
+                            aria-labelledby="dropdownDefault"
+                          >
+                            <li>
+                              <Link passHref={true} href="/math">
+                                <div className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white select-none ">
+                                  Math
+                                </div>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link passHref={true} href="/cs">
+                                <div className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white select-none ">
+                                  Computer Science
+                                </div>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link passHref={true} href="/chess">
+                                <div className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white select-none ">
+                                  Chess
+                                </div>
+                              </Link>
+                            </li>
+                          </ul>
+                        </div>
+                      ) : (
+                        <></>
+                      )}
+                    </div>
+                  )
+                )}
               </div>
             </Disclosure.Panel>
           </>

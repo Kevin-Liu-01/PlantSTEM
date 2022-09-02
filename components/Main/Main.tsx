@@ -2,10 +2,11 @@ import { ClockIcon, UserIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import Navbar from "../Navbar";
 import HeaderContents from "./Main_Contents";
 import React from "react";
+import CountUp from "react-countup";
 
 function Home() {
   return (
-    <div className="min-h-screen bg-gray-200 pb-10">
+    <div className="min-h-screen bg-gray-200 pb-14">
       {/*header section*/}
 
       <div className="  items-center">
@@ -18,16 +19,16 @@ function Home() {
       {/*header section 2*/}
 
       <div className="bg-gray-200 pt-6">
-        <div className=" max-w-7xl mx-auto  grid grid-cols-1 md:grid-cols-2">
+        <div className=" max-w-7xl md:mx-auto  grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 ">
           <div className="flex drop-shadow-lg md:mr-12 mt-10 place-content-center">
             <a href="#" className="relative w-[100%] ">
               {
-                <div className="bg-[url('../assets/pencil.jpg')] h-full rounded-xl"></div>
+                <div className="bg-[url('../assets/pencil.jpg')] h-96 md:h-full md:mx-0 mx-10 mb-10 rounded-xl"></div>
               }
             </a>
           </div>
 
-          <div className=" place-content-center mt-20 mb-20 mx-10 md:mx-0">
+          <div className=" place-content-center md:mt-20 md:mb-20 mb-0 mx-10 md:mx-0">
             <p className=" text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl text-center md:text-left">
               Our Mission
             </p>
@@ -38,32 +39,12 @@ function Home() {
               water to quench the student’s thirst for knowledge. At PlantSTEM
               we are committed to teach anyone, regardless of their backgrounds.
             </p>
-            {/* <div>
-              <div className="absolute mt-1 flex items-center justify-center h-12 w-12 rounded-md bg-indigo-600 text-white ">
-                <ClockIcon className="h-6 w-6" aria-hidden="true" />
-              </div>
-              <p className="ml-16 max-w-5xl text-gray-500 mt-10">
-                Tutorial allows clients and tutors to connect with each other
-                and find each other quickly. No more asking around on chats
-                anymore - now you can easily discover suitable tutors/clients.
-              </p>
-            </div>
-            <dt>
-              <div className="absolute  flex items-center justify-center h-12 w-12 rounded-md bg-indigo-600 text-white ">
-                <UserIcon className=" h-6 w-6" aria-hidden="true" />
-              </div>
-              <p className="ml-16 max-w-5xl  text-gray-500 mt-10">
-                Tutorial allows every individual to share necessary information
-                about their details and requirements. However, if you have any
-                reservations, you can easily email them and contact them for
-                inquiries and questions.
-              </p>
-            </dt> */}
           </div>
         </div>
       </div>
-      <div className="  bg-gray-200 max-w-7xl mx-auto grid grid-cols-2">
-        <div className="grow ml-10 mr-12 md:ml-0 drop-shadow-lg my-10 ">
+
+      <div className="  bg-gray-200 max-w-7xl mx-auto grid grid-rows-2 md:grid-rows-1 md:grid-cols-2">
+        <div className="grow ml-10 mr-12 md:ml-0 drop-shadow-lg md:mt-12 mt-0 mb-10">
           <iframe
             title="DiscordLink"
             src="https://discord.com/widget?id=991282168154308769&theme=dark"
@@ -74,7 +55,7 @@ function Home() {
           ></iframe>
         </div>
 
-        <div className=" ml-5 md:ml-0 place-content-center mt-10 mb-10 ">
+        <div className="md:ml-0 flex flex-col place-content-center md:mt-10 mb-10 mx-10 md:mx-0">
           <div className="mb-5">
             <p className=" text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               Ready to get started?
@@ -82,14 +63,16 @@ function Home() {
             <p className="mt-2 pb-1 text-3xl leading-8 font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-plantGreenLighter to-plantGreenDark sm:text-4xl">
               Join the community Discord server{" "}
             </p>
-            <p className="mt-1 text-3xl leading-8 font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-plantGreenLighter to-plantGreenDark sm:text-4xl">
+            <p className="md:mt-1 text-3xl leading-8 font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-plantGreenLighter to-plantGreenDark sm:text-4xl">
               or contact us below.
             </p>
           </div>
-          <div className="mt-12 sm:mt-0 ">
+          <div className="md:mt-12 sm:mt-0 ">
             <div className="mt-5 md:col-span-2 md:mt-0 ">
-              <form action="#" method="POST">
-                <div className="overflow-hidden shadow sm:rounded-xl">
+              <form
+              // action="#" method="POST"
+              >
+                <div className="overflow-hidden shadow rounded-xl">
                   <div className="bg-white px-4 py-5 sm:p-6">
                     <div className="grid grid-cols-6 gap-6">
                       <div className="col-span-6 sm:col-span-3">
@@ -187,6 +170,23 @@ function Home() {
                   </div>
                 </div>
               </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Counter block */}
+      <div className="relative flex justify-center h-[500px] bg-gradient-to-b to-plantGreenDark from-plantGreen max-w-7xl rounded-2xl mx-10 md:mx-auto  mt-4 overflow-hidden">
+        <div className=" bg-[url('../assets/trees.jpg')] opacity-20 h-full w-full absolute "></div>
+
+        <div className="justify-center mx-auto z-10">
+          <div className="md:mx-0 mx-10 text-4xl leading-8 font-extrabold tracking-tight text-plantGreenLight sm:text-5xl text-center mt-12 ">
+            How many trees has PlantSTEM planted?
+          </div>
+          <div className="relative flex mx-auto justify-center mt-9 drop-shadow-lg text-plantGreenLight h-64 w-64 md:h-80 md:w-80 text-2xl md:text-4xl leading-8 font-bold tracking-tight  bg-plantGreen border-4 border-plantGreenLight rounded-[50%] overflow-hidden">
+            <div className=" bg-[url('../assets/leaves.jpg')] opacity-20 h-full w-full absolute "></div>
+
+            <div className="z-10 pt-[6.5rem] md:pt-32">
+              <CountUp className="mr-1" end={113} /> trees planted!
             </div>
           </div>
         </div>
