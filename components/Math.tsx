@@ -22,8 +22,10 @@ function Math() {
                 <VariableIcon />
               </div>
               <p className="ml-16 text-lg font-medium leading-6 text-gray-900">
-                Math - <div className="font-bold inline"></div>THIS PAGE IS
-                UNDER DEVELOPMENT
+                Math -{" "}
+                <div className="font-bold inline">
+                  THIS PAGE IS UNDER DEVELOPMENT
+                </div>
               </p>
             </dt>
             <dd className="mt-2 ml-16 text-base text-gray-500">

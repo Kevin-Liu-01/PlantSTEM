@@ -8,6 +8,7 @@ const navigation = [
   { name: "Home", href: "/" },
   { name: "Classes", href: "/classes" },
   { name: "About", href: "/about" },
+  { name: "Counter", href: "/counter" },
 ];
 
 function Navbar(props) {
