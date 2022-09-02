@@ -68,7 +68,7 @@ function Home() {
             title="DiscordLink"
             src="https://discord.com/widget?id=991282168154308769&theme=dark"
             className="w-full h-full rounded-xl"
-            allowtransparency="true"
+            allowTransparency={true}
             frameBorder="0"
             sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts "
           ></iframe>
