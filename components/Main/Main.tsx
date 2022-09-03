@@ -19,16 +19,16 @@ function Home() {
       {/*header section 2*/}
 
       <div className="bg-gray-200 pt-3">
-        <div className=" max-w-7xl md:mx-auto  grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 ">
+        <div className=" mx-10 md:mx-16  grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 ">
           <div className="flex drop-shadow-lg md:mr-12 mt-10 place-content-center">
             <a href="#" className="relative w-[100%] ">
               {
-                <div className="bg-[url('../assets/pencil.jpg')] h-96 md:h-full md:mx-0 mx-7 mb-10 rounded-xl"></div>
+                <div className="bg-[url('../assets/pencil.jpg')] bg-cover  h-96 md:h-full md:mx-0 mb-10 rounded-xl"></div>
               }
             </a>
           </div>
 
-          <div className=" place-content-center md:mt-20 md:mb-20 mb-0 mx-7 md:mx-0">
+          <div className=" place-content-center md:mt-20 md:mb-20 mb-0 md:mx-0">
             <p className=" text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl text-center md:text-left">
               Our Goal
             </p>
@@ -46,17 +46,17 @@ function Home() {
         </div>
       </div>
       {/* Counter block */}
-      <div className="relative flex justify-center h-[500px] bg-gradient-to-b to-plantGreenDark from-plantGreen max-w-7xl rounded-2xl mx-7 md:mx-auto drop-shadow-lg mt-12 overflow-hidden md:mb-0 mb-14">
-        <div className=" bg-[url('../assets/trees.jpg')] opacity-20 h-full w-full absolute "></div>
+      <div className="relative flex justify-center h-[500px] bg-gradient-to-b to-plantGreenDark from-plantGreen  rounded-2xl mx-10 md:mx-16 drop-shadow-lg mt-12 overflow-hidden md:mb-0 mb-14">
+        <div className=" bg-[url('../assets/trees.jpg')] bg-cover opacity-20 h-full w-full absolute "></div>
 
         <div className="justify-center mx-auto z-10">
           <div className="md:mx-0 mx-10 text-4xl leading-8 font-extrabold tracking-tight text-plantGreenLight sm:text-5xl text-center mt-12 ">
             How many trees has PlantSTEM planted?
           </div>
           <div className="relative flex mx-auto justify-center mt-9 drop-shadow-lg text-plantGreenLight h-64 w-64 md:h-80 md:w-80 text-2xl md:text-4xl leading-8 font-bold tracking-tight  bg-plantGreen border-4 border-plantGreenLight rounded-[50%] overflow-hidden">
-            <div className=" bg-[url('../assets/leaves.jpg')] opacity-20 h-full w-full absolute "></div>
+            <div className=" bg-[url('../assets/leaves.jpg')] bg-cover  opacity-20 h-full w-full absolute "></div>
 
-            <div className="z-10 pt-[6.5rem] md:pt-32">
+            <div className="z-10 my-auto text-center">
               <CountUp className="mr-1" end={113} /> trees planted!
             </div>
           </div>
@@ -65,8 +65,8 @@ function Home() {
 
       {/*Discord block */}
 
-      <div className="  bg-gray-200 max-w-7xl mx-auto grid grid-rows-2 md:grid-rows-1 md:grid-cols-2">
-        <div className="grow mx-7 md:mr-12 md:ml-0 drop-shadow-lg md:mt-12 mt-0 md:mb-0 mb-10 ">
+      <div className="  bg-gray-200 mx-10 md:mx-16 grid grid-rows-2 md:grid-rows-1 md:grid-cols-2">
+        <div className="grow  md:mr-12 md:ml-0 drop-shadow-lg md:mt-12 mt-0 md:mb-0 mb-10 ">
           <iframe
             src="https://discord.com/widget?id=991282168154308769&theme=dark"
             width="350"
@@ -78,7 +78,7 @@ function Home() {
           ></iframe>
         </div>
 
-        <div className="md:ml-0 flex flex-col place-content-center md:mt-10 mx-7 md:mx-0 md:mb-0 mb-10">
+        <div className="md:ml-0 flex flex-col place-content-center md:mt-10  md:mx-0 md:mb-0 mb-10">
           <div className="mb-6">
             <p className=" text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               Ready to get started?

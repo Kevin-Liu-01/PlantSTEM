@@ -15,8 +15,8 @@ function About() {
       {/*header section 2*/}
 
       <div className="bg-gradient-to-b  from-white to-gray-200  pb-12 ">
-        <div className="px-4 sm:px-6 lg:px-0">
-          <div className="mx-auto max-w-7xl">
+        <div className="mx-10 md:mx-16">
+          <div className="">
             <h2 className="text-lg font-semibold text-plantGreen">About Us</h2>
             <p className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
               Our Mission

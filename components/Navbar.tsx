@@ -18,11 +18,11 @@ function Navbar(props) {
     return classes.filter(Boolean).join(" ");
   }
   return (
-    <div className="bg-white py-8 md:px-0 px-7">
+    <div className="bg-white py-8">
       <Disclosure as="nav">
         {({ open }) => (
           <>
-            <div className="max-w-7xl mx-auto ">
+            <div className="mx-10 md:mx-14">
               <div className="relative flex items-center justify-between h-16">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                   {/* Mobile menu button*/}
