@@ -7,6 +7,10 @@ import { SessionProvider } from "next-auth/react";
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
     <SessionProvider session={session}>
+      <Head>
+        {" "}
+        <title>PlantSTEM</title>
+      </Head>
       <noscript>You need to enable JavaScript to run this app.</noscript>
 
       <div id="root" />

@@ -62,8 +62,11 @@ function Home() {
           </div>
         </div>
       </div>
+
+      {/*Discord block */}
+
       <div className="  bg-gray-200 max-w-7xl mx-auto grid grid-rows-2 md:grid-rows-1 md:grid-cols-2">
-        <div className="grow mx-7 md:mr-12 md:ml-0 drop-shadow-lg md:mt-12 mt-0 mb-10">
+        <div className="grow mx-7 md:mr-12 md:ml-0 drop-shadow-lg md:mt-12 mt-0 md:mb-0 mb-10 ">
           <iframe
             src="https://discord.com/widget?id=991282168154308769&theme=dark"
             width="350"
@@ -75,8 +78,8 @@ function Home() {
           ></iframe>
         </div>
 
-        <div className="md:ml-0 flex flex-col place-content-center md:mt-10 mb-10 mx-7 md:mx-0">
-          <div className="mb-5">
+        <div className="md:ml-0 flex flex-col place-content-center md:mt-10 mx-7 md:mx-0 md:mb-0 mb-10">
+          <div className="mb-6">
             <p className=" text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               Ready to get started?
             </p>
@@ -87,7 +90,7 @@ function Home() {
               or contact us below.
             </p>
           </div>
-          <div className="md:mt-12 sm:mt-0 ">
+          <div className="md:mt-5 sm:mt-0 ">
             <div className="mt-5 md:col-span-2 md:mt-0 ">
               <form
               // action="#" method="POST"
