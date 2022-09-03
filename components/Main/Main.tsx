@@ -12,13 +12,13 @@ function Home() {
       <div className="  items-center">
         {/*Navbar*/}
         <Navbar page="Home" />
-        <div className="bg-gradient-to-b to-gray-500">
+        <div className="bg-gradient-to-b to-gray-500 ">
           <HeaderContents />
         </div>
       </div>
       {/*header section 2*/}
 
-      <div className="bg-gray-200 pt-6">
+      <div className="bg-gray-200 pt-3">
         <div className=" max-w-7xl md:mx-auto  grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 ">
           <div className="flex drop-shadow-lg md:mr-12 mt-10 place-content-center">
             <a href="#" className="relative w-[100%] ">
@@ -30,7 +30,7 @@ function Home() {
 
           <div className=" place-content-center md:mt-20 md:mb-20 mb-0 mx-7 md:mx-0">
             <p className=" text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl text-center md:text-left">
-              Our Mission
+              Our Goal
             </p>
             <p className="mt-4 max-w-5xl text-xl text-gray-500 text-center md:text-left ">
               At PlantSTEM we want to bring out the brightest in our students.
@@ -38,20 +38,40 @@ function Home() {
               their journey to reach the skies. We plant curiosity and provide
               water to quench the student’s thirst for knowledge. At PlantSTEM
               we are committed to teach anyone, regardless of their backgrounds.
+              With every penny you donate, we use to plant trees! Here at
+              PlantSTEM, not only are we focused on helping the next generation
+              with studies, but also the environment.
             </p>
           </div>
         </div>
       </div>
+      {/* Counter block */}
+      <div className="relative flex justify-center h-[500px] bg-gradient-to-b to-plantGreenDark from-plantGreen max-w-7xl rounded-2xl mx-7 md:mx-auto drop-shadow-lg mt-12 overflow-hidden md:mb-0 mb-14">
+        <div className=" bg-[url('../assets/trees.jpg')] opacity-20 h-full w-full absolute "></div>
 
+        <div className="justify-center mx-auto z-10">
+          <div className="md:mx-0 mx-10 text-4xl leading-8 font-extrabold tracking-tight text-plantGreenLight sm:text-5xl text-center mt-12 ">
+            How many trees has PlantSTEM planted?
+          </div>
+          <div className="relative flex mx-auto justify-center mt-9 drop-shadow-lg text-plantGreenLight h-64 w-64 md:h-80 md:w-80 text-2xl md:text-4xl leading-8 font-bold tracking-tight  bg-plantGreen border-4 border-plantGreenLight rounded-[50%] overflow-hidden">
+            <div className=" bg-[url('../assets/leaves.jpg')] opacity-20 h-full w-full absolute "></div>
+
+            <div className="z-10 pt-[6.5rem] md:pt-32">
+              <CountUp className="mr-1" end={113} /> trees planted!
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="  bg-gray-200 max-w-7xl mx-auto grid grid-rows-2 md:grid-rows-1 md:grid-cols-2">
         <div className="grow mx-7 md:mr-12 md:ml-0 drop-shadow-lg md:mt-12 mt-0 mb-10">
           <iframe
-            title="DiscordLink"
             src="https://discord.com/widget?id=991282168154308769&theme=dark"
+            width="350"
+            height="500"
             className="w-full h-full rounded-xl"
             allowTransparency={true}
             frameBorder="0"
-            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts "
+            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
           ></iframe>
         </div>
 
@@ -60,7 +80,7 @@ function Home() {
             <p className=" text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               Ready to get started?
             </p>
-            <p className="mt-2 pb-1 text-3xl leading-8 font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-plantGreenLighter to-plantGreenDark sm:text-4xl">
+            <p className="mt-2 md:pb-1 text-3xl leading-8 font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-plantGreenLighter to-plantGreenDark sm:text-4xl">
               Join the community Discord server{" "}
             </p>
             <p className="md:mt-1 text-3xl leading-8 font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-plantGreenLighter to-plantGreenDark sm:text-4xl">
@@ -170,23 +190,6 @@ function Home() {
                   </div>
                 </div>
               </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Counter block */}
-      <div className="relative flex justify-center h-[500px] bg-gradient-to-b to-plantGreenDark from-plantGreen max-w-7xl rounded-2xl mx-7 md:mx-auto  mt-4 overflow-hidden">
-        <div className=" bg-[url('../assets/trees.jpg')] opacity-20 h-full w-full absolute "></div>
-
-        <div className="justify-center mx-auto z-10">
-          <div className="md:mx-0 mx-10 text-4xl leading-8 font-extrabold tracking-tight text-plantGreenLight sm:text-5xl text-center mt-12 ">
-            How many trees has PlantSTEM planted?
-          </div>
-          <div className="relative flex mx-auto justify-center mt-9 drop-shadow-lg text-plantGreenLight h-64 w-64 md:h-80 md:w-80 text-2xl md:text-4xl leading-8 font-bold tracking-tight  bg-plantGreen border-4 border-plantGreenLight rounded-[50%] overflow-hidden">
-            <div className=" bg-[url('../assets/leaves.jpg')] opacity-20 h-full w-full absolute "></div>
-
-            <div className="z-10 pt-[6.5rem] md:pt-32">
-              <CountUp className="mr-1" end={113} /> trees planted!
             </div>
           </div>
         </div>
