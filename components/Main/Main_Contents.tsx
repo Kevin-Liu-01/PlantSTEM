@@ -8,7 +8,7 @@ function HeaderContents() {
 
   return (
     <div className="bg-gradient-to-b from-white to-gray-200 ">
-      <div className="drop-shadow-lg relative  mx-10 md:mx-16 flex flex-col justify-center h-[600px] bg-gradient-to-b to-plantGreenDark from-plantGreen  rounded-2xl   overflow-hidden">
+      <div className="drop-shadow-lg relative  mx-7 md:mx-16 flex flex-col justify-center h-[600px] bg-gradient-to-b to-plantGreenDark from-plantGreen  rounded-2xl   overflow-hidden">
         <div className=" bg-[url('../assets/leaves.jpg')] bg-cover  opacity-20 h-full w-full absolute "></div>
 
         <div className="flex flex-col justify-center z-10">

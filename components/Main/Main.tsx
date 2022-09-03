@@ -19,7 +19,7 @@ function Home() {
       {/*header section 2*/}
 
       <div className="bg-gray-200 pt-3">
-        <div className=" mx-10 md:mx-16  grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 ">
+        <div className=" mx-7 md:mx-16  grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 ">
           <div className="flex drop-shadow-lg md:mr-12 mt-10 place-content-center">
             <a href="#" className="relative w-[100%] ">
               {
@@ -46,7 +46,7 @@ function Home() {
         </div>
       </div>
       {/* Counter block */}
-      <div className="relative flex justify-center h-[500px] bg-gradient-to-b to-plantGreenDark from-plantGreen  rounded-2xl mx-10 md:mx-16 drop-shadow-lg mt-12 overflow-hidden md:mb-0 mb-14">
+      <div className="relative flex justify-center h-[500px] bg-gradient-to-b to-plantGreenDark from-plantGreen  rounded-2xl mx-7 md:mx-16 drop-shadow-lg mt-12 overflow-hidden md:mb-0 mb-14">
         <div className=" bg-[url('../assets/trees.jpg')] bg-cover opacity-20 h-full w-full absolute "></div>
 
         <div className="justify-center mx-auto z-10">
@@ -65,7 +65,7 @@ function Home() {
 
       {/*Discord block */}
 
-      <div className="  bg-gray-200 mx-10 md:mx-16 grid grid-rows-2 md:grid-rows-1 md:grid-cols-2">
+      <div className="  bg-gray-200 mx-7 md:mx-16 grid grid-rows-2 md:grid-rows-1 md:grid-cols-2">
         <div className="grow  md:mr-12 md:ml-0 drop-shadow-lg md:mt-12 mt-0 md:mb-0 mb-10 ">
           <iframe
             src="https://discord.com/widget?id=991282168154308769&theme=dark"

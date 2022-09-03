@@ -15,7 +15,7 @@ function Cs() {
       </div>
       {/*header section 2*/}
       <div className="bg-gradient-to-b  from-white to-gray-200 ">
-        <div className="relative flex justify-center h-[600px] bg-gradient-to-b to-plantGreenDark from-plantGreen rounded-2xl mx-10 md:mx-16 overflow-hidden">
+        <div className="relative flex justify-center h-[600px] bg-gradient-to-b to-plantGreenDark from-plantGreen rounded-2xl mx-7 md:mx-16 overflow-hidden">
           <div className=" bg-[url('../assets/trees.jpg')] opacity-20 h-full w-full absolute "></div>
 
           <div className="justify-center mx-auto z-10">

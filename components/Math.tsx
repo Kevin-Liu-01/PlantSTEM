@@ -15,7 +15,7 @@ function Math() {
       {/*header section 2*/}
 
       <div className="bg-gradient-to-b  from-white to-gray-200  ">
-        <div className="mx-10 md:mx-16">
+        <div className="mx-7 md:mx-16">
           <div className="relative">
             <dt>
               <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-plantGreen text-white">

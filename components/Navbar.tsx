@@ -22,7 +22,7 @@ function Navbar(props) {
       <Disclosure as="nav">
         {({ open }) => (
           <>
-            <div className="mx-10 md:mx-14">
+            <div className="mx-7 md:mx-14">
               <div className="relative flex items-center justify-between h-16">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                   {/* Mobile menu button*/}
