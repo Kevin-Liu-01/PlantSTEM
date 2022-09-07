@@ -9,6 +9,7 @@ const navigation = [
   { name: "Classes", href: "/classes" },
   { name: "About", href: "/about" },
   { name: "Counter", href: "/counter" },
+  { name: "Join Us", href: "https://forms.gle/VJrehmDpKoCrXABj8" },
 ];
 
 function Navbar(props) {
