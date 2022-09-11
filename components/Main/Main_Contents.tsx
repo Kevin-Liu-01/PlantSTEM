@@ -117,19 +117,21 @@ function HeaderContents() {
           </div>
 
           <div className="grid grid-rows-2 md:grid-cols-2 gap-x-8 gap-y-4 ">
-            <button className="flex hover:text-red-300 rounded-lg md:mx-0 mx-4 md:ml-96 drop-shadow-lg transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-red-700 duration-200 ">
-              <div className="m-4 mx-auto text-2xl leading-8 font-bold tracking-tight select-none ">
-                Get Started
-              </div>
-            </button>
-            <button className="flex hover:text-plantGreen rounded-lg md:mx-0 mx-4 md:mr-96 drop-shadow-lg transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-plantGreenLight duration-200 ">
-              <Link passHref={true} href="/about">
+            <Link passHref={true} href="/classes">
+              <button className="flex hover:text-plantGreen rounded-lg md:mx-0 mx-4 md:ml-96 drop-shadow-lg transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-plantGreenLight duration-200 ">
+                <div className="m-4 mx-auto text-2xl leading-8 font-bold tracking-tight select-none ">
+                  Get Started
+                </div>
+              </button>
+            </Link>
+            <Link passHref={true} href="/about">
+              <button className="flex hover:text-plantGreen rounded-lg md:mx-0 mx-4 md:mr-96 drop-shadow-lg transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-plantGreenLight duration-200 ">
                 <div className="m-4 mx-auto text-2xl leading-8 font-bold tracking-tight select-none ">
                   {" "}
                   About Us
                 </div>
-              </Link>
-            </button>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

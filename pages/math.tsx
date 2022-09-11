@@ -3,7 +3,7 @@ import Math from "../components/Math";
 import Footer from "../components/Footer";
 import React from "react";
 
-function App() {
+function MathPage() {
   return (
     <>
       <Math />
@@ -13,4 +13,4 @@ function App() {
   );
 }
 
-export default App;
+export default MathPage;

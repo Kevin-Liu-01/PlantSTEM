@@ -1,15 +1,15 @@
 import Head from "next/head";
-import Staff from "../components/Staff";
+import Classes from "../components/Classes";
 import Footer from "../components/Footer";
 import React from "react";
-function StaffPage() {
+function ClassPage() {
   return (
     <>
-      <Staff />
+      <Classes />
 
       <Footer></Footer>
     </>
   );
 }
 
-export default StaffPage;
+export default ClassPage;

@@ -2,7 +2,7 @@ import Head from "next/head";
 import Cs from "../components/Cs";
 import Footer from "../components/Footer";
 import React from "react";
-function AboutPage() {
+function CSPage() {
   return (
     <>
       <Cs />
@@ -12,4 +12,4 @@ function AboutPage() {
   );
 }
 
-export default AboutPage;
+export default CSPage;

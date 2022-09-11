@@ -275,6 +275,13 @@ function Navbar(props) {
                                   aria-labelledby="dropdownDefault"
                                 >
                                   <li>
+                                    <Link passHref={true} href="/classes">
+                                      <div className="block py-2 px-4  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white select-none ">
+                                        Schedule
+                                      </div>
+                                    </Link>
+                                  </li>
+                                  <li>
                                     <Link passHref={true} href="/math">
                                       <div className="block py-2 px-4  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white select-none ">
                                         Math
@@ -334,15 +341,15 @@ function Navbar(props) {
                           item.name === props.page
                             ? "text-gray-900 border border-t-0 border-l-0 border-r-0 border-b-4 border-plantGreen hover:border-plantGreenDark "
                             : "text-gray-400 rounded-lg ",
-                          "pl-3 pr-3 pb-2.5 text-base font-medium hover:rounded-tl-lg hover:rounded-tr-lg hover:bg-plantGreen  hover:text-white hover:focus:ring-4 focus:outline-none  text-center inline-flex items-center transition duration-200 ease-in-out"
+                          "pl-3 pr-3 pb-2.5 w-full text-base font-medium hover:rounded-tl-lg hover:rounded-tr-lg hover:bg-plantGreen  hover:text-white hover:focus:ring-4 focus:outline-none  text-center inline-flex items-center transition duration-200 ease-in-out"
                         )}
                         type="button"
                         onClick={() => setDropdown(!Dropdown)}
                       >
-                        <div className="font-medium inline-flex text-base  pt-[0.45rem] ">
+                        <div className="font-medium inline-flex text-base w-full pt-[0.45rem] ">
                           {item.name}
                           <svg
-                            className="ml-2 mt-1.5 w-4 h-4"
+                            className="mt-1.5 w-4 h-4 ml-auto"
                             aria-hidden="true"
                             fill="none"
                             stroke="currentColor"
@@ -361,12 +368,19 @@ function Navbar(props) {
                       {Dropdown ? (
                         <div
                           id="dropdown"
-                          className="absolute z-10 w-22 bg-white rounded-tr-lg rounded-bl-lg rounded-br-lg divide-y divide-gray-100 shadow dark:bg-gray-700 "
+                          className="absolute z-10 w-full bg-white rounded-tr-lg rounded-bl-lg rounded-br-lg divide-y divide-gray-100 shadow dark:bg-gray-700 "
                         >
                           <ul
                             className="py-1 text-sm text-gray-700 dark:text-gray-200"
                             aria-labelledby="dropdownDefault"
                           >
+                            <li>
+                              <Link passHref={true} href="/classes">
+                                <div className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white select-none ">
+                                  Schedule
+                                </div>
+                              </Link>
+                            </li>
                             <li>
                               <Link passHref={true} href="/math">
                                 <div className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white select-none ">
