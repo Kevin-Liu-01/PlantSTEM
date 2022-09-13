@@ -33,14 +33,12 @@ function Home() {
               Our Goal
             </p>
             <p className="mt-4 max-w-5xl text-xl text-gray-500 text-center md:text-left ">
-              At PlantSTEM we want to bring out the brightest in our students.
-              We strive to teach them the concepts that they are going to use in
-              their journey to reach the skies. We plant curiosity and provide
-              water to quench the student’s thirst for knowledge. At PlantSTEM
-              we are committed to teach anyone, regardless of their backgrounds.
-              With every penny you donate, we use to plant trees! Here at
-              PlantSTEM, not only are we focused on helping the next generation
-              with studies, but also the environment.
+              PlantSTEM aims to bring out the brightest in our students. We
+              strive to teach them the concepts they will use in their journey
+              to reach the skies. We plant curiosity and provide water to quench
+              the student’s thirst for knowledge. PlantSTEM is committed to
+              teaching anyone, regardless of their background. With every penny
+              you donate, PlantSTEM plants trees!
             </p>
           </div>
         </div>

@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import React from "react";
 import CountUp from "react-countup";
 
-function Cs() {
+function Counter() {
   return (
     <div className="min-h-screen bg-gray-200 pb-10">
       {/*header section*/}
@@ -26,7 +26,7 @@ function Cs() {
               <div className="flex bg-[url('../assets/leaves.jpg')] opacity-20 h-full w-full absolute "></div>
 
               <div className="z-10 text-center my-auto">
-                <CountUp className="mr-1" end={113} /> trees planted!
+                <CountUp className="mr-1" end={113} delay={2} /> trees planted!
               </div>
             </div>
           </div>
@@ -36,4 +36,4 @@ function Cs() {
   );
 }
 
-export default Cs;
+export default Counter;

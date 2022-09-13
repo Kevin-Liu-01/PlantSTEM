@@ -205,7 +205,9 @@ function Footer() {
             <div className="text-gray-800">© 2022 Copyright: PlantSTEM™</div>
 
             <p className="text-gray-800 text-xs mt-3 ">
-              Made by Kevin Liu for PlantSTEM
+              501-(c) Non-Profit Organization{" "}
+              <div className="inline text-base mx-1">|</div> Made by Kevin Liu
+              for PlantSTEM
             </p>
           </div>
         </div>

@@ -6,10 +6,12 @@ import Link from "next/link";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "Classes", href: "/classes" },
-  { name: "About", href: "/about" },
+  { name: "Courses", href: "/classes" },
   { name: "Counter", href: "/counter" },
+  { name: "Partners", href: "/partners" },
+  { name: "About Us", href: "/about" },
   { name: "Join Us", href: "https://forms.gle/VJrehmDpKoCrXABj8" },
+  { name: "Donate", href: "/#" },
 ];
 
 function Navbar(props) {
@@ -219,7 +221,7 @@ function Navbar(props) {
                   <div className="hidden sm:block sm:ml-6 my-2">
                     <div className="flex space-x-4">
                       {navigation.map((item) =>
-                        item.name != "Classes" ? (
+                        item.name != "Courses" ? (
                           <a
                             key={item.name}
                             href={item.href}
@@ -318,7 +320,7 @@ function Navbar(props) {
             <Disclosure.Panel className="sm:hidden ">
               <div className="mx-7 md:px-2 pt-2 pb-3 space-y-1 ">
                 {navigation.map((item) =>
-                  item.name != "Classes" ? (
+                  item.name != "Courses" ? (
                     <Disclosure.Button
                       key={item.name}
                       as="a"
