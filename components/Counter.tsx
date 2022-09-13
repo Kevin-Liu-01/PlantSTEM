@@ -26,7 +26,7 @@ function Counter() {
               <div className="flex bg-[url('../assets/leaves.jpg')] opacity-20 h-full w-full absolute "></div>
 
               <div className="z-10 text-center my-auto">
-                <CountUp className="mr-1" end={113} delay={2} /> trees planted!
+                <CountUp className="mr-1" end={113} /> trees planted!
               </div>
             </div>
           </div>
